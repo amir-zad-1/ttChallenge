@@ -1,0 +1,19 @@
+{
+  "name": "ttchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypBox/ttChallenge.git"
+  },
+  "author": "Amir HosseinzadeH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hypBox/ttChallenge/issues"
+  },
+  "homepage": "https://github.com/hypBox/ttChallenge#readme"
+}
