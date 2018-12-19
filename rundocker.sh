@@ -1,8 +1,8 @@
 #!/bin/sh
 
-echo "Building Docker image..."
+echo "[i] Building Docker image..."
 sudo docker build -t ttchallenge .
-echo "Docker Image Built."
-echo "running Image..."
-docker run -name amirChallenge -p 3000:3000 -d ttchallenge
-echo "Image is running..."
+echo "[i] Docker Image Built."
+echo "[i] running Image..."
+sudo docker run -p 3000:3000 -d ttchallenge
+echo "[i] Image is running on port 3000..."

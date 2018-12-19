@@ -23,6 +23,9 @@
     npm start
     curl http://localhost:3000/jukebox/1/settings
 
+##### Docker image
+![Docker image](/tests/docker.png?raw=true "Docker Image")
+
 ### Testing
 #### Unit Tests
      cd [root directory of repository]
