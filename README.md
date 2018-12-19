@@ -1,6 +1,6 @@
 # TT Challenge REST-API Service 
 
-### Technologies:
+#### Technologies:
 1. [Nodejs](https://nodejs.org/en/)
 2. [Expressjs](https://expressjs.com/)
 3. [Mocha](https://mochajs.org/)
@@ -23,16 +23,17 @@
     npm start
     curl http://localhost:3000/jukebox/1/settings
 
-#### Testing
-##### Unit Tests
+### Testing
+#### Unit Tests
      cd [root directory of repository]
      npm run unit-tests
 
-##### Integration Tests
+#### Integration Tests
      cd [root directory of repository]
      npm start&
      npm run integration-tests
- Integration Tests Result
+
+#####Integration Tests Result
  
 ![Test Results](/tests/tests.png?raw=true "Test Results")
 
