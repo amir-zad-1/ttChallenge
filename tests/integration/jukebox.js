@@ -10,7 +10,7 @@ chai.use(chaiHttp);
 const TEST_JUKEBOX_ID = 1;
 const API_URL = `http://localhost:${config.server.port}/jukebox/${TEST_JUKEBOX_ID}/settings`;
 
-describe("Jukebox settings", () => {
+describe("HTTP GET on jukebox/1/settings", () => {
   let configurableSettings = [];
   before(done => {
     chai.request(API_URL).get("/").end((error, response) => {
@@ -20,16 +20,9 @@ describe("Jukebox settings", () => {
     });
   });
 
-
-  it("should be an array", done => {
+  it("should return an array", done => {
     assert.equal(Array.isArray(configurableSettings), true);
     done();
   });
-
-  it("should not contain duplicates", done => {
-    assert.equal([...new Set(configurableSettings)].length, configurableSettings.length);
-    done();
-  });
-
 
 });
