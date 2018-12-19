@@ -12,7 +12,9 @@
 #### Run the Project in Docker
     cd [root directory of repository]
     npm i
-    npm start
+    npm build
+    sudo docker build .
+    sudo docker run -d 
     curl http://localhost:3000/jukebox/1/settings
      
 #### Run the Project
