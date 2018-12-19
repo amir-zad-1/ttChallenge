@@ -1,9 +1,9 @@
 # TT Challenge REST-API Service 
 
 ### Technologies:
-1. Nodejs
-2. Framework: Expressjs 4.16.0
-3. Mocha
+1. [Nodejs](https://nodejs.org/en/)
+2. [Expressjs](https://expressjs.com/)
+3. [Mocha](https://mochajs.org/)
 
 #### Endpoints
      1. http://localhost:3000/jukebox/1/settings
