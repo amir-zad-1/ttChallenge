@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel server.js -d ./dist && babel ./src -d ./dist/src && babel ./tests -d ./dist/tests",
     "start": "npm run build && node ./dist/server.js",
-    "unit-tests": "mocha tests/integration",
+    "test": "npm run build && npm run unit-tests && npm run integration-tests",
+    "unit-tests": "npm run build && mocha ./dist/tests/unit",
     "integration-tests": "npm run build && mocha ./dist/tests/integration"
   },
   "repository": {

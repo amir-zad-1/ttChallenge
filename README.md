@@ -23,12 +23,21 @@
     npm start
     curl http://localhost:3000/jukebox/1/settings
 
-#### Run the Tests
+#### Testing
+##### Unit Tests
      cd [root directory of repository]
-     npm run test
+     npm run unit-tests
 
-##### Integration Tests Result     
+##### Integration Tests
+     cd [root directory of repository]
+     npm start&
+     npm run integration-tests
+ Integration Tests Result
+ 
 ![Test Results](/tests/tests.png?raw=true "Test Results")
+
+     
+
 
     
 
