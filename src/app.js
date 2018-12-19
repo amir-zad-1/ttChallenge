@@ -4,7 +4,7 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
-import indexRouter from './routes/index';
+import indexRouter from './routes/jukebox';
 
 const app = express();
 
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 
-app.use('/', indexRouter);
+app.use('/jukebox', indexRouter);
 
 app.use((request, response, next) => {
   next(createError(404));
@@ -24,7 +24,7 @@ app.use((error, request, response, next) => {
   response.locals.error = request.app.get('env') === 'development' ? error : {};
 
   response.status(error.status || 500);
-  response.render('error');
+  response.json({error: 'error'});
 });
 
 module.exports = app;

@@ -1,5 +1,5 @@
 'use strict';
-const getSettings = () => {
+const getSettingsFromAPI = () => {
   return new Promise(resolve => {
     const settings = [
       {
@@ -13,12 +13,16 @@ const getSettings = () => {
       {
         "name": "Volume",
         "requires": ["audio"]
+      },
+      {
+        "name": "CardReader",
+        "requires": ["nfc"]
       }
     ];
-    resolve(settings);
+    return resolve(settings);
   });
 };
 
 export default {
-  getSettings
+  getAll: getSettingsFromAPI
 }

@@ -13,6 +13,7 @@ server.on('listening', () => console.log(`Server is listening on port ${config.s
 
 process.on('SIGINT', () => {
   console.log('Stopping server.');
-  server.close();
-  console.log('Server stopped.');
+  server.close(() => {
+    console.log('Server stopped.');
+  });
 });

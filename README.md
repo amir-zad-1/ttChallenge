@@ -14,14 +14,14 @@
     
     cd [root directory of repository]
     npm i
-    npm run
+    npm start
     curl localhost:8080
 
 
 #### Run Tests
     
      cd [root directory of repository]
-     mocha test
+     npm test
      
 ![Test Results](/testResult/tests.png?raw=true "Test Results")
 

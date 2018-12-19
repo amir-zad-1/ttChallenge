@@ -1,5 +1,5 @@
 'use strict';
-const getComponents = () => {
+const _getComponentsFromAPI = () => {
   return new Promise(resolve => {
     const components = [
       {
@@ -9,7 +9,17 @@ const getComponents = () => {
         "name": "LED array"
       }
     ];
-    resolve(components);
+    return resolve(components);
+  });
+};
+
+const getComponents = jukeboxId => {
+  return new Promise(resolve => {
+    const components = [];
+    _getComponentsFromAPI().then(componentObjectArray => {
+      componentObjectArray.forEach(componentObject => components.push(componentObject.name));
+      return resolve(components);
+    });
   });
 };
 
