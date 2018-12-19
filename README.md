@@ -10,7 +10,6 @@
         1.1 [GET] => Returns an array of configurable Settings for the given JukeboxId.
 
 #### Run the Project in Docker
-    
     cd [root directory of repository]
     npm i
     npm start
@@ -18,14 +17,13 @@
      
 #### Run the Project
  Note: Requires node.js and npm to be installed.
-    
+
     cd [root directory of repository]
     npm i
     npm start
     curl http://localhost:3000/jukebox/1/settings
 
-#### Run Tests
-    
+#### Run the Tests
      cd [root directory of repository]
      npm test
      
