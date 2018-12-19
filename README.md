@@ -25,9 +25,9 @@
 
 #### Run the Tests
      cd [root directory of repository]
-     npm test
+     npm run test
      
-![Test Results](/testResult/tests.png?raw=true "Test Results")
+![Test Results](/tests/tests.png?raw=true "Test Results")
 
     
 

@@ -4,9 +4,10 @@
   "description": "TT Challenge",
   "main": "server.js",
   "scripts": {
-    "build": "babel server.js -d ./dist && babel ./src -d ./dist/src",
+    "build": "babel server.js -d ./dist && babel ./src -d ./dist/src && babel ./tests -d ./dist/tests",
     "start": "npm run build && node ./dist/server.js",
-    "test": "mocha tests"
+    "unit-tests": "mocha tests/integration",
+    "integration-tests": "npm run build && mocha ./dist/tests/integration"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
     "debug": "~2.6.9",
     "mocha": "^5.2.0"
   }
