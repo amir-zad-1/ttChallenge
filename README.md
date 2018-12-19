@@ -33,7 +33,7 @@
      npm start&
      npm run integration-tests
 
-#####Integration Tests Result
+##### Integration Tests Result
  
 ![Test Results](/tests/tests.png?raw=true "Test Results")
 
