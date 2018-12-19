@@ -26,7 +26,8 @@
 #### Run the Tests
      cd [root directory of repository]
      npm run test
-     
+
+##### Integration Tests Result     
 ![Test Results](/tests/tests.png?raw=true "Test Results")
 
     
