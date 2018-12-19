@@ -1,3 +1,4 @@
+'use strict';
 const getSettings = () => {
   return new Promise(resolve => {
     const settings = [

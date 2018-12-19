@@ -213,3 +213,5 @@ typings/
 
 
 # End of https://server.js.gitignore.io/api/node,webstorm+all,jetbrains+all
+
+dist/**

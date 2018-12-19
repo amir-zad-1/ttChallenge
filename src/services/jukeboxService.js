@@ -1,3 +1,4 @@
+'use strict';
 const getComponents = () => {
   return new Promise(resolve => {
     const components = [

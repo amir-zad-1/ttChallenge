@@ -4,7 +4,8 @@
   "description": "TT Challenge",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "build": "babel server.js -d ./dist && babel ./src -d ./dist/src",
+    "start": "npm run build && node ./dist/server.js",
     "test": "mocha tests"
   },
   "repository": {
@@ -18,13 +19,17 @@
   },
   "homepage": "https://github.com/hypBox/ttChallenge#readme",
   "dependencies": {
+    "babel-preset-env": "^1.7.0",
     "cookie-parser": "~1.4.3",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0"
   },
   "devDependencies": {
-    "mocha": "^5.2.0",
-    "debug": "~2.6.9"
+    "babel-cli": "^6.26.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "debug": "~2.6.9",
+    "mocha": "^5.2.0"
   }
 }
