@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/node,webstorm+all,jetbrains+all
-# Edit at https://www.gitignore.io/?templates=node,webstorm+all,jetbrains+all
+# Created by https://server.js.gitignore.io/api/node,webstorm+all,jetbrains+all
+# Edit at https://server.js.gitignore.io/?templates=node,webstorm+all,jetbrains+all
 
 ### JetBrains+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -212,4 +212,4 @@ typings/
 # Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
 
 
-# End of https://www.gitignore.io/api/node,webstorm+all,jetbrains+all
+# End of https://server.js.gitignore.io/api/node,webstorm+all,jetbrains+all

@@ -3,7 +3,7 @@
 ### Technologies:
 **API:**
 1. Nodejs
-2. Framework: Expresjs 4.16.0
+2. Framework: Expressjs 4.16.0
 
 #### Endpoints
      1. http://localhost:8080/
@@ -12,7 +12,8 @@
 #### Run the Project
  Note: Requires node.js to be installed.
     
-   cd [root directory of repository]
+    cd [root directory of repository]
+    npm i
     npm run
     curl localhost:8080
 
